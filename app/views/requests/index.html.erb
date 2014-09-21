@@ -1,0 +1,25 @@
+<h1>Listing requests</h1>
+ 
+<table>
+  <tr>
+    <th>Course</th>
+    <th>Class</th>
+    <th>Start Time</th>
+    <th>End Time</th>
+    <th>Location</th>
+    <th>Reason</th>
+    <th>Notes</th>
+  </tr>
+ 
+  <% @requests.each do |request| %>
+    <tr>
+      <td><%= request.course_id %></td>
+      <td><%= request.class_id %></td>
+      <td><%= request.start_time %></td>
+      <td><%= request.end_time %></td>
+      <td><%= request.location %></td>
+      <td><%= request.reason %></td>
+      <td><%= request.notes %></td>
+    </tr>
+  <% end %>
+</table>

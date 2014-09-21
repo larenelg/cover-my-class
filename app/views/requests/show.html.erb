@@ -1,0 +1,36 @@
+<p>
+  <strong>Course:</strong>
+  <%= @request.course_id %>
+</p>
+ 
+<p>
+  <strong>Class:</strong>
+  <%= @request.class_id %>
+</p>
+ 
+<p>
+  <strong>Start Time:</strong>
+  <%= @request.start_time %>
+</p>
+ 
+<p>
+  <strong>End Time:</strong>
+  <%= @request.end_time %>
+</p>
+ 
+<p>
+  <strong>Location:</strong>
+  <%= @request.location %>
+</p>
+ 
+<p>
+  <strong>Reason:</strong>
+  <%= @request.reason %>
+</p>
+ 
+<p>
+  <strong>Notes:</strong>
+  <%= @request.notes %>
+</p>
+
+<%= link_to 'Back', requests_path %>
